@@ -1,0 +1,123 @@
+/* General page styles */
+main {
+    padding: 2rem 0;
+}
+
+.content-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Color Chart */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.color-swatch {
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.color-swatch:hover {
+    transform: translateY(-5px);
+}
+
+.color-name {
+    font-size: 1.1rem;
+}
+
+.color-hex {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.color-category-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.load-more-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #f0db4f;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background-color: #e0c83f;
+}
+
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #f0db4f;
+    color: #333;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e0c83f;
+}
+
+#hero-order {
+    background: url('https://images.unsplash.com/photo-1600181946495-7a8f6a39a4e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover !important;
+}
+
+#hero-contact {
+    background: url('https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover !important;
+}

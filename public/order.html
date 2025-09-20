@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Progress Paints</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/pages.css?v=1.1">
+</head>
+<body>
+    <header>
+        <h1>Order Now</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="color-chart.html">Color Chart</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-order">
+            <h2>Place Your Order</h2>
+            <p>Get your favorite paints delivered to your doorstep.</p>
+        </section>
+        <section class="content-section">
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="paint-type">Paint Type:</label>
+                <select id="paint-type" name="paint-type">
+                    <option value="emulsion">Emulsion</option>
+                    <option value="polychrome">Polychrome</option>
+                    <option value="emulsion-matt">Emulsion Matt</option>
+                    <option value="gloss-oil">Gloss/Oil</option>
+                    <option value="satin">Satin</option>
+                    <option value="aluminium">Aluminium</option>
+                    <option value="white-gum">White Gum</option>
+                    <option value="metallic-sparkles">Metallic Sparkles</option>
+                </select>
+
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" required>
+
+                <label for="quantity">Quantity (in liters):</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <p>Payment is made on delivery.</p>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Progress Paints. All rights reserved.</p>
+    </footer>
+    <script src="scripts/order.js"></script>
+</body>
+</html>
